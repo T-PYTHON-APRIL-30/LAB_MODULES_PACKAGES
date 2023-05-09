@@ -1,10 +1,20 @@
-'''
-Create a new module and name it "dateOP.py" , dateOP has the following:
-A function that when called prints the current date.
-Create a new module "main.py" , and do the following:
+
 import dateOP
-call the function that print the current date
-hint : You should import the date class from the datetime module
-'''
-import dateOP
+from library.librarian import add_book, remove_book, check_out_book, return_book, display_books
+
 dateOP.current_date()
+library = {}
+
+add_book(library, "The Catcher in the Rye", "J.D. Salinger", "9780316769174")
+add_book(library, "To Kill a Mockingbird", "Harper Lee", "9780446310789")
+add_book(library, "1984", "George Orwell", "9780451524935")
+
+display_books(library)
+print()
+
+check_out_book(library, "9780316769174")
+display_books(library)
+print()
+
+return_book(library, "9780316769174")
+display_books(library)
