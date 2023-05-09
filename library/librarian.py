@@ -56,10 +56,10 @@ def return_book(library, isbn):
 
 def display_books(library):
     
-    for b_id, b_info in library.items():
-      print("\nBook information:", b_id)
+    for book_id, book_info in library.items():
+      print("\nBook information:", book_id)
     
-      for key in b_info:
-          print(key + ':', b_info[key])
+      for key in book_info:
+          print(key + ':', book_info[key])
 
     print()
