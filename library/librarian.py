@@ -87,6 +87,3 @@ my_library = {
 }
 display_books(my_library)
 
-
-
-#
