@@ -55,6 +55,7 @@ while True:
 
     elif choise == '5':
         print('Displays all the books in the library...')
+        print()
         librarian.display_books(library)
 
     elif choise == '6':
