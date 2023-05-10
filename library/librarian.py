@@ -5,7 +5,7 @@ def add_book(library, title, author, isbn):
     if isbn in library:
         print(isbn, "book is exist in the library")
     else:
-        library[isbn] = {'title': title, 'author': author, 'isbn': isbn, 'available': True}
+        library[isbn] = {'title':title, 'author':author, 'isbn':isbn, 'available':True}
 
 # remove an exist book 
 def remove_book(library, isbn):
@@ -17,7 +17,7 @@ def remove_book(library, isbn):
 # checkout a book 
 def check_out_book(library, isbn):
     if isbn not in library:
-        print(isbn, " not exist")
+        print(isbn, "not exist")
     elif not library[isbn]['available']:
         print(isbn, "not available.")
     else:
