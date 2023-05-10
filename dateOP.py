@@ -8,6 +8,3 @@ def current_date(date):
     date = date.today()
     print("The date for today is :",date)
     return date
-
-
- 
